@@ -1,7 +1,7 @@
 # Invoice PDF Data Extraction - ZOLVIT
 
 ## Overview
-This invoice data extraction system is part of the Zolvit Problem Statement, designed to automate the extraction of key information from invoice PDFs. 
+This invoice data extraction system is part of the Zolvit Problem Statement, designed to automate the extraction of key information from invoice PDFs. The implementation contains PDF text extraction and parsing, along with logging and error handling mechanisms.
 
 ## Code Walkthrough
 
