@@ -1,0 +1,55 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-143
+  invoice_date: 28 Mar 2024
+  due_date: 28 Mar 2024
+customer:
+  name: Prashant
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Arachitol 317.86 72,225.00267.00 (12%)
+  rate_per_item: 2492.0
+- item_number: 2
+  item_name: ''
+  rate_per_item: 542.37
+total:
+  total_amount: 7612.0
+  total_discount: 880.0
+  total_items: 2
+  total_quantity: 9.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 6.0
+    tax_amount: 133.5
+  - tax_type: SGST
+    tax_rate: 6.0
+    tax_amount: 133.5
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 390.51
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 390.51
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

@@ -1,0 +1,69 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-129
+  invoice_date: 23 Feb 2024
+  due_date: 23 Feb 2024
+customer:
+  name: Divya Suhane
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: sotret nf 16 mg - 10 capsules
+  rate_per_item: 282.86
+  actual_price: 321.43
+  discount (%): 12.0
+  quantity: 3.0
+  unit: STRP
+  taxable_value: 848.571
+  tax_amount_with_percentage: 1.83 (12%)
+  amount: 950.4
+- item_number: 2
+  item_name: Ekran Aqua Sunscreen Spf 30
+  rate_per_item: 268.47
+  actual_price: 305.08
+  discount (%): 12.0
+  quantity: 1.0
+  unit: PAC
+  taxable_value: 268.474
+  tax_amount_with_percentage: 8.33 (18%)
+  amount: 316.8
+total:
+  total_amount: 1267.0
+  total_discount: 172.8
+  total_items: 2
+  total_quantity: 4.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 6.0
+    tax_amount: 50.91
+  - tax_type: SGST
+    tax_rate: 6.0
+    tax_amount: 50.91
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 24.16
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 24.16
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

@@ -1,0 +1,100 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-133
+  invoice_date: 01 Mar 2024
+  due_date: 01 Mar 2024
+customer:
+  name: Sheetal Kapur
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Glogeous facewash
+  rate_per_item: 785.17
+  actual_price: 923.73
+  discount (%): 15.0
+  quantity: 1.0
+  unit: BTL
+  taxable_value: 785.1714
+  tax_amount_with_percentage: 1.33 (18%)
+  amount: 926.5
+- item_number: 2
+  item_name: Bristaa Intense Cream
+  rate_per_item: 749.95
+  actual_price: 872.03
+  discount (%): 14.0
+  quantity: 1.0
+  unit: BTL
+  taxable_value: 749.9513
+  tax_amount_with_percentage: 4.99 (18%)
+  amount: 884.94
+- item_number: 3
+  item_name: Anaboom AD Lotion - 50 ml
+  rate_per_item: 233.39
+  actual_price: 274.58
+  discount (%): 15.0
+  quantity: 1.0
+  unit: BTL
+  taxable_value: 233.394
+  tax_amount_with_percentage: 2.01 (18%)
+  amount: 275.4
+- item_number: 4
+  item_name: Anaboom AD Shampoo
+  rate_per_item: 290.1
+  actual_price: 329.66
+  discount (%): 12.0
+  quantity: 1.0
+  unit: BTL
+  taxable_value: 290.105
+  tax_amount_with_percentage: 2.22 (18%)
+  amount: 342.32
+- item_number: 5
+  item_name: Acutret 5 mg
+  rate_per_item: 81.18
+  actual_price: 101.47
+  discount (%): 20.0
+  quantity: 3.0
+  unit: STRP
+  taxable_value: 243.542
+  tax_amount_with_percentage: 9.22 (12%)
+  amount: 272.76
+total:
+  round_off: 0.08
+  total_amount: 2702.0
+  total_discount: 471.03
+  total_items: 5
+  total_quantity: 7.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 6.0
+    tax_amount: 14.61
+  - tax_type: SGST
+    tax_rate: 6.0
+    tax_amount: 14.61
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 185.27
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 185.27
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

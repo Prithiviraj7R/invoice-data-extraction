@@ -1,0 +1,55 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-141
+  invoice_date: 06 Mar 2024
+  due_date: 06 Mar 2024
+customer:
+  name: Kasturi Kalwar
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Acne-UV Gel - spf 50 (50 gm)
+  rate_per_item: 620.34
+  actual_price: 775.42
+  discount (%): 20.0
+  quantity: 1.0
+  unit: PAC
+  taxable_value: 620.3411
+  tax_amount_with_percentage: 1.66 (18%)
+  amount: 732.0
+- {}
+total:
+  round_off: 0.5
+  total_amount: 1754.0
+  total_discount: 296.5
+  total_items: 2
+  total_quantity: 2.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 133.74
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 133.74
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

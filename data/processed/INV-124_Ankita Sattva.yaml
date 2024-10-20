@@ -1,0 +1,53 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-124
+  invoice_date: 10 Feb 2024
+  due_date: 10 Feb 2024
+customer:
+  name: Ankita Sattva
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Arachitol Nano (60k) 4*5ml  340.433 BTL1,021.29122.55 (12%)
+  rate_per_item: 1143.84
+total:
+  round_off: 0.18
+  total_amount: 1115.0
+  total_discount: 152.02
+  total_items: 2
+  total_quantity: 6.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 6.0
+    tax_amount: 61.28
+  - tax_type: SGST
+    tax_rate: 6.0
+    tax_amount: 61.28
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 9.38
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 9.38
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

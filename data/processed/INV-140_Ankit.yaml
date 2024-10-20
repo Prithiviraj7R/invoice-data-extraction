@@ -1,0 +1,70 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-140
+  invoice_date: 06 Mar 2024
+  due_date: 06 Mar 2024
+customer:
+  name: Ankit
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Keraglo Men Tablet - 30 tablets
+  rate_per_item: 477.97
+  actual_price: 597.46
+  discount (%): 20.0
+  quantity: 1.0
+  unit: BTL
+  taxable_value: 477.978
+  tax_amount_with_percentage: 6.03 (18%)
+  amount: 564.0
+- item_number: 2
+  item_name: Kera-FM 5% Topical Solution
+  rate_per_item: 521.39
+  actual_price: 651.74
+  discount (%): 20.0
+  quantity: 1.0
+  unit: BTL
+  taxable_value: 521.396
+  tax_amount_with_percentage: 2.57 (12%)
+  amount: 583.96
+total:
+  round_off: 0.04
+  total_amount: 1148.0
+  total_discount: 286.99
+  total_items: 2
+  total_quantity: 2.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 6.0
+    tax_amount: 31.28
+  - tax_type: SGST
+    tax_rate: 6.0
+    tax_amount: 31.28
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 43.02
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 43.02
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

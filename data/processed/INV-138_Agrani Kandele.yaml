@@ -1,0 +1,52 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-138
+  invoice_date: 06 Mar 2024
+  due_date: 06 Mar 2024
+customer:
+  name: Agrani Kandele
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- {}
+- item_number: 461
+  item_name: .86 (-10%)1 BTL415.6874.82 (18%)
+  rate_per_item: 490.5
+- item_number: 600
+  item_name: .85 (-20%)1480.6886.52 (18%)
+  rate_per_item: 567.2
+- {}
+total:
+  round_off: 0.1
+  total_amount: 1505.0
+  total_discount: 308.1
+  total_items: 3
+  total_quantity: 3.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 114.78
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 114.78
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

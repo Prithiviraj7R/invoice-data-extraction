@@ -1,0 +1,92 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-147
+  invoice_date: 29 Mar 2024
+  due_date: 29 Mar 2024
+customer:
+  name: Divya Suhane
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Solasafe sunscreen gel spf 50
+  rate_per_item: 450.64
+- item_number: 2
+  item_name: Trapic 500 TA - 10
+  rate_per_item: 163.09
+  actual_price: 185.33
+  discount (%): 12.0
+  quantity: 3.0
+  unit: STRP
+  taxable_value: 489.282
+  tax_amount_with_percentage: 4.46 (5%)
+  amount: 513.74
+- item_number: 3
+  item_name: Depiwhite Advanced Cream - 15 ml
+  rate_per_item: 495.93
+  actual_price: 563.56
+  discount (%): 12.0
+  quantity: 1.0
+  unit: TUB
+  taxable_value: 495.938
+  tax_amount_with_percentage: 9.27 (18%)
+  amount: 585.2
+- item_number: 4
+  item_name: Fixderma Shadow SPF 50+ Cream
+  rate_per_item: 410.17
+  actual_price: 466.1
+  discount (%): 12.0
+  quantity: 1.0
+  unit: TUB
+  taxable_value: 410.177
+  tax_amount_with_percentage: 3.83 (18%)
+  amount: 484.0
+- item_number: 5
+  item_name: Sortet F 16 mg - 10 cap
+  rate_per_item: 316.8
+  actual_price: 360.0
+  discount (%): 12.0
+  quantity: 6.0
+  unit: STRP
+  taxable_value: 1900.8
+  tax_amount_with_percentage: 0.00 (0%)
+  amount: 1900.8
+total:
+  total_amount: 4015.0
+  total_discount: 652.31
+  total_items: 5
+  total_quantity: 12.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 2.5
+    tax_amount: 12.23
+  - tax_type: SGST
+    tax_rate: 2.5
+    tax_amount: 12.23
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 122.11
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 122.11
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

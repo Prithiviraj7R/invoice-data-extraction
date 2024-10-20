@@ -1,0 +1,70 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-148
+  invoice_date: 30 Mar 2024
+  due_date: 01 Apr 2024
+customer:
+  name: harshit rathore
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Zincovit tablet
+  rate_per_item: 78.31
+  actual_price: 88.98
+  discount (%): 12.0
+  quantity: 6.0
+  unit: STRP
+  taxable_value: 469.838
+  tax_amount_with_percentage: 4.57 (18%)
+  amount: 554.4
+- item_number: 2
+  item_name: Sevenseas Cap
+  rate_per_item: 303.29
+  actual_price: 344.64
+  discount (%): 12.0
+  quantity: 2.0
+  unit: BTL
+  taxable_value: 606.577
+  tax_amount_with_percentage: 2.79 (12%)
+  amount: 679.36
+total:
+  round_off: 0.24
+  total_amount: 1234.0
+  total_discount: 168.24
+  total_items: 2
+  total_quantity: 8.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 6.0
+    tax_amount: 36.39
+  - tax_type: SGST
+    tax_rate: 6.0
+    tax_amount: 36.39
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 42.28
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 42.28
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

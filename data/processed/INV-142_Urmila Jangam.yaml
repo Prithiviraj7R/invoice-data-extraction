@@ -1,0 +1,53 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-142
+  invoice_date: 07 Mar 2024
+  due_date: 07 Mar 2024
+customer:
+  name: Urmila Jangam
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Kera XL New Hair Growth Serum
+  rate_per_item: 874.58
+  actual_price: 1093.22
+  discount (%): 20.0
+  quantity: 1.0
+  unit: BTL
+  taxable_value: 874.5815
+  tax_amount_with_percentage: 7.42 (18%)
+  amount: 1032.0
+total:
+  total_amount: 1032.0
+  total_discount: 258.0
+  total_items: 1
+  total_quantity: 1.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 78.71
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 78.71
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

@@ -1,0 +1,75 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-144
+  invoice_date: 28 Mar 2024
+  due_date: 28 Mar 2024
+customer:
+  name: Atia Latif
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Bioderma Pigmentbio C-concentrate
+  rate_per_item: 2363.64
+  actual_price: 2626.27
+  discount (%): 10.0
+  quantity: 1.0
+  unit: PCS
+  taxable_value: 2363.6442
+  tax_amount_with_percentage: 5.46 (18%)
+  amount: 2789.1
+- item_number: 2
+  item_name: Arachitol Nano (60k) 4*5ml
+  rate_per_item: 299.58
+  actual_price: 340.43
+  discount (%): 12.0
+  quantity: 2.0
+  unit: BTL
+  taxable_value: 599.157
+  tax_amount_with_percentage: 1.90 (12%)
+  amount: 671.05
+- item_number: 3
+  item_name: Solasafe sunscreen gel spf 50
+  rate_per_item: 450.64
+- item_number: 4
+  item_name: Lab test - full body checkup  2,000.00 36,000.000.00 (0%)
+  rate_per_item: 6000.0
+total:
+  total_amount: 24047.0
+  total_discount: 933.16
+  total_items: 5
+  total_quantity: 10.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 6.0
+    tax_amount: 731.95
+  - tax_type: SGST
+    tax_rate: 6.0
+    tax_amount: 731.95
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 334.4
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 334.4
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

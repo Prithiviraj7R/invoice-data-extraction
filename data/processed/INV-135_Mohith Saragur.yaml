@@ -1,0 +1,78 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-135
+  invoice_date: 01 Mar 2024
+  due_date: 01 Mar 2024
+customer:
+  name: Mohith Saragur
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Tab flucon 400mg
+  rate_per_item: 22.58
+  actual_price: 28.23
+  discount (%): 20.0
+  quantity: 3.0
+  unit: STRP
+  taxable_value: 67.751
+  tax_amount_with_percentage: 2.19 (18%)
+  amount: 79.94
+- item_number: 2
+  item_name: Lupizol ZS Shampoo 100 ml
+  rate_per_item: 369.91
+  actual_price: 420.36
+  discount (%): 12.0
+  quantity: 1.0
+  unit: BTL
+  taxable_value: 369.914
+  tax_amount_with_percentage: 4.39 (12%)
+  amount: 414.3
+- item_number: 3
+  item_name: Anaboom AD Lotion - 50 ml
+  rate_per_item: 253.56
+  actual_price: 288.14
+  discount (%): 12.0
+  quantity: 1.0
+  unit: BTL
+  taxable_value: 253.564
+  tax_amount_with_percentage: 5.64 (18%)
+  amount: 299.2
+total:
+  total_discount: 117.28
+  total_items: 3
+  total_quantity: 5.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 6.0
+    tax_amount: 22.19
+  - tax_type: SGST
+    tax_rate: 6.0
+    tax_amount: 22.19
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 28.92
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 28.92
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

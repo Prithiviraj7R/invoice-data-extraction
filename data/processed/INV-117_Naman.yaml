@@ -1,0 +1,80 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-117
+  invoice_date: 01 Feb 2024
+  due_date: 29 Jan 2024
+customer:
+  name: Naman
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- item_number: 1
+  item_name: Kera M 5% Solution
+  rate_per_item: 492.86
+  actual_price: 616.07
+  discount (%): 20.0
+  quantity: 1.0
+  unit: BTL
+  taxable_value: 492.865
+  tax_amount_with_percentage: 9.14 (12%)
+  amount: 552.0
+- item_number: 2
+  item_name: Arachitol Nano (60k) 4*5ml
+  rate_per_item: 299.58
+  actual_price: 340.43
+  discount (%): 12.0
+  quantity: 3.0
+  unit: BTL
+  taxable_value: 898.731
+  tax_amount_with_percentage: 7.85 (12%)
+  amount: 1006.58
+- item_number: 3
+  item_name: Neurobion Forte - 30 tablets
+  rate_per_item: 30.58
+  actual_price: 34.75
+  discount (%): 12.0
+  quantity: 3.0
+  unit: STRP
+  taxable_value: 91.731
+  tax_amount_with_percentage: 6.51 (18%)
+  amount: 108.24
+total:
+  round_off: 0.18
+  total_amount: 1667.0
+  total_discount: 290.02
+  total_items: 3
+  total_quantity: 7.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 6.0
+    tax_amount: 83.5
+  - tax_type: SGST
+    tax_rate: 6.0
+    tax_amount: 83.5
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 8.26
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 8.26
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.

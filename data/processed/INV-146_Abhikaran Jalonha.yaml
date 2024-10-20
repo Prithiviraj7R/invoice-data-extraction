@@ -1,0 +1,84 @@
+recipient:
+  name: UNCUE DERMACARE PRIVATE LIMITED
+  gstin: 23AADCU2395N1ZY
+  address_line_1: KARUNA GUPTA KURELE, 1st Floor
+  address_line_2: S.P Bungalow Ke Pichhe, Shoagpur Shahdol, Shahdol
+  city: Shahdol
+  state: MADHYA PRADESH
+  pincode: '484001'
+  contact:
+    mobile: +91 8585960963
+    email: ruhi@dermaq.in
+invoice:
+  invoice_number: INV-146
+  invoice_date: 29 Mar 2024
+  due_date: 29 Mar 2024
+customer:
+  name: Abhikaran Jalonha
+  place_of_supply:
+    state_code: '23'
+    state: MADHYA PRADESH
+items:
+- {}
+- item_number: 438
+  item_name: .98 (-10%)1 TUB395.0871.12 (18%)
+  rate_per_item: 466.2
+- actual_price: 632.2
+  discount (%): 12.0
+  quantity: 1.0
+  unit: PAC
+  taxable_value: 556.341
+  tax_amount_with_percentage: 0.14 (18%)
+  amount: 656.48
+- item_number: 3
+  item_name: Acutret 20 mg - 10 capsules
+  rate_per_item: 206.43
+  actual_price: 258.04
+  discount (%): 20.0
+  quantity: 6.0
+  unit: STRP
+  taxable_value: 1238.5714
+  tax_amount_with_percentage: 8.63 (12%)
+  amount: 1387.2
+- item_number: 4
+  item_name: Faireye under eye cream
+  rate_per_item: 695.8
+- item_number: 5
+  item_name: Biluma cream - 15 gm
+  rate_per_item: 462.37
+  actual_price: 525.42
+  discount (%): 12.0
+  quantity: 1.0
+  unit: PAC
+  taxable_value: 462.378
+  tax_amount_with_percentage: 3.23 (18%)
+  amount: 545.6
+total:
+  round_off: 0.48
+  total_amount: 3877.0
+  total_discount: 674.48
+  total_items: 5
+  total_quantity: 10.0
+  taxes:
+  - tax_type: CGST
+    tax_rate: 6.0
+    tax_amount: 74.31
+  - tax_type: SGST
+    tax_rate: 6.0
+    tax_amount: 74.31
+  - tax_type: CGST
+    tax_rate: 9.0
+    tax_amount: 189.86
+  - tax_type: SGST
+    tax_rate: 9.0
+    tax_amount: 189.86
+payment:
+  payment_method: UPI
+  bank_details:
+    bank: Kotak Mahindra Bank
+    account_number: '1146860541'
+    ifsc_code: kkbk0000725
+    branch: PUNE - CHINCHWAD
+authorisation:
+  signatory: Authorized Signatory
+  note: This is a computer-generated document and requires no signature.
