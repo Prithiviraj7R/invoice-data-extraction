@@ -187,7 +187,6 @@ def parse_text(text: str):
         total_info["taxes"] = taxes
         parsed_info["total"] = total_info
 
-
         payment_details_match = re.search(r"Bank:\s*(.+?)\nAccount #:\s*(\S+)\nIFSC Code:\s*(\S+)\nBranch:\s*(.+?)\n", text)
         if payment_details_match:
             paymeny_info = {
@@ -202,8 +201,8 @@ def parse_text(text: str):
 
             parsed_info["payment"] = paymeny_info
 
-
         # extract the authorisation information
+
         authorisation_info = {
             'signatory': "Authorized Signatory",
             'note': "This is a computer-generated document and requires no signature."
