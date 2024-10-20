@@ -19,22 +19,41 @@ def parse_text(text: str):
         logging.info("Parsing the text extracted from the PDF file.")
 
         # extract the recipient information
-        recipient_search = re.search(r"^(.*?)\nGSTIN (\S+)\s+C/o (.+?)\n(.*?)\nMobile (.+?)\s+Email (.+?)\n", text, re.DOTALL | re.MULTILINE)
+        recipient_search = re.search(
+            r"^(?:TA X.*?\n)?(.*?)\nGSTIN (\S+)\s+C/o (.+?)\n(.+?)\n(.+?),\s*(\d{6})\nMobile (.+?)\s+Email (.+?)\n",
+            text,
+            re.DOTALL | re.MULTILINE
+        )
+
+        recipient_info = {}
         if recipient_search:
+            address_line_2 = recipient_search.group(4).strip()
+            city_state_line = recipient_search.group(5).strip()
+            
+            city_state_match = re.search(r"(\w+)\s*,\s*(.+)", city_state_line)
+            
+            if city_state_match:
+                city = city_state_match.group(1).strip()
+                state = city_state_match.group(2).strip()
+            else:
+                city = ""
+                state = ""
+
             recipient_info = {
                 "name": recipient_search.group(1).strip(),
                 "gstin": recipient_search.group(2),
-                "address": recipient_search.group(3),
-                "city": recipient_search.group(4).split(",")[-2].strip(),
-                "state": recipient_search.group(4).split(",")[-1].strip(),
+                "address_line_1": recipient_search.group(3).strip(),
+                "address_line_2": address_line_2,
+                "city": city,
+                "state": state,
+                "pincode": recipient_search.group(6),
                 "contact": {
-                    "mobile": recipient_search.group(5),
-                    "email": recipient_search.group(6)
+                    "mobile": recipient_search.group(7),
+                    "email": recipient_search.group(8)
                 }
             }
 
-            parsed_info["recipient"] = recipient_info
-
+        parsed_info = {"recipient": recipient_info}
 
         # extract the invoice information
 
@@ -86,56 +105,88 @@ def parse_text(text: str):
                 info_part1 = lines[2*i]
                 info_part2 = lines[2*i + 1]
 
-                match1 = re.match(r"(\d)(.*?)([\d,]+\.\d+)$", info_part1.strip())
-                match2 = re.match(r"([\d,]+\.\d+)\s+\(([-\d]+)%\)(\d+)\s+(\w+)([\d,]+\.\d+)([\d,]+\.\d+)\s+\((\d+)%\)([\d,]+\.\d+)", info_part2.strip())
+                match1 = re.match(r"(\d+)(.*?)([\d,]+\.\d+)$", info_part1.strip())
+                match2 = re.match(
+                        r"([\d,]+\.\d+)\s+\(([-\d]+)%\)(\d+)\s+([A-Z]+)\s*([\d,]+\.\d+)([\d,]+\.\d+)\s+\((\d+)%\)([\d,]+\.\d+)", 
+                        info_part2.strip()
+                    )
 
                 item_info = {}
 
                 if match1:
                     item_info.update({
-                        "item_number": match1.group(1),
+                        "item_number": int(match1.group(1)),
                         "item_name": match1.group(2).strip(),
-                        "rate_per_item": float(match1.group(3).replace(',', ''))  # Remove commas before converting
+                        "rate_per_item": float(match1.group(3).replace(',', ''))
                     })
 
                 if match2:
                     item_info.update({
                         "actual_price": float(match2.group(1).replace(',', '')),
-                        "discount": float(match2.group(2)),
+                        "discount (%)": -1 * float(match2.group(2)),
                         "quantity": float(match2.group(3)),
                         "unit": match2.group(4),
                         "taxable_value": float(match2.group(5).replace(',', '')),
                         "tax_amount_with_percentage": f"{match2.group(6)} ({match2.group(7)}%)",
                         "amount": float(match2.group(8).replace(',', ''))
                     })
-                    
+
                 items.append(item_info)   
 
             parsed_info["items"] = items
 
         # extract the total information
 
-        totals_match = re.search(r"Taxable Amount ₹(\d+\.\d+)\nCGST 6.0% ₹(\d+\.\d+)\nSGST 6.0% ₹(\d+\.\d+)\nCGST 9.0% ₹(\d+\.\d+)\nSGST 9.0% ₹(\d+\.\d+)\nRound Off (\d+\.\d+)\nTotal₹(\d+\.\d+)\nTotal Discount ₹(\d+\.\d+)\nTotal Items / Qty : (\d+) / (\d+\.\d+)", text)
-        if totals_match:
-            total_info = {
-                'taxable_amount': float(totals_match.group(1)),
-                'cgst_6_percent': float(totals_match.group(2)),
-                'sgst_6_percent': float(totals_match.group(3)),
-                'cgst_9_percent': float(totals_match.group(4)),
-                'sgst_9_percent': float(totals_match.group(5)),
-                'round_off': float(totals_match.group(6)),
-                'total_amount': float(totals_match.group(7)),
-                'total_discount': float(totals_match.group(8)),
-                'total_items': {
-                    'count': int(totals_match.group(9)),
-                    'quantity': float(totals_match.group(10))
-                },
-                'amount_in_words': re.search(r"Total amount \(in words\):\s+(.*?)\.", text).group(1).strip()
-            }
+        totals_end_match = re.search(r"Amount Paid", text)
+        totals_text = text[items_end_match.end():totals_end_match.start()].strip()
 
-            parsed_info["total"] = total_info
+        lines = totals_text.split("\n")
 
-        # extract the payment information
+        total_info = {}
+        taxes = []
+
+        for line in lines:
+            line = line.strip()
+
+            match_taxable = re.match(r"Taxable Amount\s*₹([\d,]+\.\d+)", line)
+            if match_taxable:
+                total_info["taxable_amount"] = float(match_taxable.group(1).replace(',', ''))
+                continue
+
+            match_tax = re.match(r"([A-Z]+)\s([\d.]+)%\s*₹([\d,]+\.\d+)", line)
+            if match_tax:
+                tax_info = {
+                    "tax_type": match_tax.group(1),
+                    "tax_rate": float(match_tax.group(2)),
+                    "tax_amount": float(match_tax.group(3).replace(',', ''))
+                }
+                taxes.append(tax_info)
+                continue
+
+            match_round_off = re.match(r"Round Off\s*([\d,]+\.\d+)", line)
+            if match_round_off:
+                total_info["round_off"] = float(match_round_off.group(1).replace(',', ''))
+                continue
+
+            match_total = re.match(r"Total₹([\d,]+\.\d+)", line)
+            if match_total:
+                total_info["total_amount"] = float(match_total.group(1).replace(',', ''))
+                continue
+
+            match_discount = re.match(r"Total Discount\s*₹([\d,]+\.\d+)", line)
+            if match_discount:
+                total_info["total_discount"] = float(match_discount.group(1).replace(',', ''))
+                continue
+
+            match_items_qty = re.match(r"Total Items / Qty :\s*(\d+)\s*/\s*([\d.]+)", line)
+            if match_items_qty:
+                total_info["total_items"] = int(match_items_qty.group(1))
+                total_info["total_quantity"] = float(match_items_qty.group(2))
+                continue
+
+        total_info["taxes"] = taxes
+        parsed_info["total"] = total_info
+
 
         payment_details_match = re.search(r"Bank:\s*(.+?)\nAccount #:\s*(\S+)\nIFSC Code:\s*(\S+)\nBranch:\s*(.+?)\n", text)
         if payment_details_match:

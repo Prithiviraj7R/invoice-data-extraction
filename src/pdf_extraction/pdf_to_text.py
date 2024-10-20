@@ -31,7 +31,6 @@ def pdf_to_text(pdf_path: str) -> str:
 
     return text
 
-
 if __name__ == "__main__":
     pdf_path = r"D:\Placements\Zolvit\invoice-data-extraction\data\raw\INV-117_Naman.pdf"
     text = pdf_to_text(pdf_path)

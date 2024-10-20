@@ -37,6 +37,9 @@ def main(pdf_file_path):
 
 
 if __name__ == "__main__":
-    pdf_file_path = r"D:\Placements\Zolvit\invoice-data-extraction\data\raw\INV-117_Naman.pdf"
-    main(pdf_file_path)
+    folder_path = "data/raw"
+    for file in os.listdir(folder_path):
+        if file.endswith(".pdf"):
+            pdf_file_path = os.path.join(folder_path, file)
+            main(pdf_file_path)
 
